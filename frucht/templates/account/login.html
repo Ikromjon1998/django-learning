@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <form action="/account/login/" method="get">
+        <label for="login">Login</label>
+        <input type="email" placeholder="User email" name="email" />
+        <input type="text" placeholder="Password" name="password" />
+        <button type="submit">login</button>
+    </form>
+    <p>Current email: </p> {{ email |  default:"0" }}
+    <p>current email: </p> {{ password | default:"0"}}
+{% endblock %}
+
+

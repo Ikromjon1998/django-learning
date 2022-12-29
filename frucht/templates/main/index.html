@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    Salom Content Block in Index
+    <hr>
+    <br>
+    IP:          {{ ip }}
+    <br>
+    Web Browser: {{ wb }}
+    <br>
+    <strong>Total: </strong> {{ request.GET.son1 }} + {{ request.GET.son2 }} = {{ n }}
+{% endblock %}
+
+
